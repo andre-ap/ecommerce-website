@@ -7,6 +7,9 @@
     margin: 0px;
 }
 
+body {
+    font-family: 'Lexend', sans-serif;
+}
 
 /* ALERTA */
 .alert {
@@ -16,7 +19,7 @@
     display: flex;
     justify-content: center;
     font-size: medium;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     font-weight: 900;
     font-size: 14px;
 }
@@ -54,8 +57,9 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
+    margin: 20px;
 }
 
 .menu-links a:hover {
@@ -64,10 +68,11 @@
 
 .menu-links a {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
+
 }
 
 .menu-itens {
@@ -91,14 +96,6 @@
     height: 36px;
 }
 
-/* .search-bar {
-    height: 50px;
-    width: 480px;
-    border-radius: 15px;
-    border-color: #369D45;
-    font-size: 14px;
-} */
-
 .search{
     width: max-content;
     display: flex;
@@ -116,10 +113,73 @@
     outline: none;
     border: none;
     background-color: #f6f6f6;
-    width: 400px;
+    width: 320px;
 }
 
-.material-symbols-outlined {
-    color: #65B741;
+.cart img{
+    color: #000;
+}
 
+
+/* HERO */
+
+main {
+    width: 1400;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 80px;
+    /* padding: 80px; */
+}
+
+.hero img {
+    height: 75vh;
+}
+
+.hero h4 {
+    padding-bottom: 15px;
+}
+
+.hero h1 {
+    color: #65B741;
+    font-weight: 800;
+    font-size: 42px;
+}
+
+.hero-content span{
+    border-bottom: solid thin #369D45 ; 
+}
+
+.hero p {
+    padding: 10px 0 36px;
+}
+/* CSS */
+.compre {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.1em;
+  border-radius: 20em;
+  cursor: pointer;
+}
+
+#compre:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e;
+}
+
+#compre:active {
+  box-shadow: 0 0.7em 1em -0.5em #14a73e98;
 }
